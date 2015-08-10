@@ -287,5 +287,11 @@ C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Labo
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+<<<<<<< HEAD
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+=======
+>>>>>>> master
 >>>>>>> master
 >>>>>>> master
