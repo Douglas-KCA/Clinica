@@ -25,7 +25,7 @@ namespace Laboratorio
             funActualizar();
         }
 
-        void cancelar() {
+        void funCancelar() {
             txtActualizarTipo.Text = "";
             txtActualizarPorcentaje.Text = "";
             btnBuscar.Enabled = true;
@@ -113,6 +113,7 @@ namespace Laboratorio
                     {
                         MessageBox.Show("No se encontraron resultados", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
+                    btnCancelar.Enabled = true;
                 }
 
 
@@ -122,7 +123,7 @@ namespace Laboratorio
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            btnCancelar.Enabled = true;
+            
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -134,7 +135,7 @@ namespace Laboratorio
                 comando.ExecuteNonQuery();
                 funActualizar();
                 MessageBox.Show("Se actualizo con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cancelar();
+                funCancelar();
                 funActualizar();
             }
             catch
@@ -162,7 +163,7 @@ namespace Laboratorio
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            cancelar();
+            funCancelar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -174,7 +175,7 @@ namespace Laboratorio
                 comando.ExecuteNonQuery();
                 funActualizar();
                 MessageBox.Show("Dato eliminado con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cancelar();
+                funCancelar();
                 funActualizar();
             }
             catch
