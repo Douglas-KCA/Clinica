@@ -15,7 +15,6 @@ namespace Laboratorio
    Programador: Josue Revolorio
    Analista: Kevin Cajbon 
 ---------------------------------------------------------------------------------------------------------------------------------*/
-
     public partial class frmConsultaSucursal : Form
     {
         public frmConsultaSucursal()
@@ -23,9 +22,8 @@ namespace Laboratorio
             InitializeComponent();
             funActualizar();
         }
-
         /*---------------------------------------------------------------------------------------------------------------------------------
-          Funcion que actualiza los datos de la tabla con los de la BD
+          Funcion que pobla el grid con los datos de la BD
         ---------------------------------------------------------------------------------------------------------------------------------*/
         void funActualizar()
         {
@@ -56,10 +54,16 @@ namespace Laboratorio
             }
 
         }
-
         /*---------------------------------------------------------------------------------------------------------------------------------
           Funcion que filtra los datos del grid a partir de un parametro de busqueda
         ---------------------------------------------------------------------------------------------------------------------------------*/
+        /*private void CellBeginEdit(object sender,DataGridViewCellCancelEventArgs e)
+        {
+            String sNombre = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[0].Value + "";
+            String sUbicacion = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[1].Value + "";
+            txtNombre.Text = sNombre + sUbicacion;
+        }*/
+        
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string sUbicacion;
@@ -106,11 +110,42 @@ namespace Laboratorio
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        /*---------------------------------------------------------------------------------------------------------------------------------
+          Funcion que limpia los textbox o combobox
+        ---------------------------------------------------------------------------------------------------------------------------------*/
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNombre.Text = "";
             funActualizar();
+        }
+        /*---------------------------------------------------------------------------------------------------------------------------------
+          Funcion que toma los datos del grid y los actualiza en la base de datos en caso exista un cambio
+        ---------------------------------------------------------------------------------------------------------------------------------*/
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            int i;
+            for (i = 0; i <= grdSucursal.RowCount -1; i++)
+            {
+                String sNombre = grdSucursal.Rows[i].Cells[0].Value + "";
+                String sUbicacion = grdSucursal.Rows[i].Cells[1].Value + "";
+                try
+                {
+                    MySqlCommand comando = new MySqlCommand(string.Format("UPDATE SUCURSAL SET cubicacion = '{0}', cnombresucursal = '{1}' WHERE ncodsucursal = '{2}'", sUbicacion, sNombre, i+1), clasConexion.funConexion());
+                    comando.ExecuteNonQuery();
+                }
+                catch
+                {
+                    MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            funActualizar();
+        }
+        /*---------------------------------------------------------------------------------------------------------------------------------
+          Funcion que Elimina la fila seleccionada
+        ---------------------------------------------------------------------------------------------------------------------------------*/
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

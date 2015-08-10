@@ -252,6 +252,7 @@ C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\
 C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
 C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+<<<<<<< HEAD
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
@@ -277,3 +278,8 @@ C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Labo
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+=======
+C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+>>>>>>> master
