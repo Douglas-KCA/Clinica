@@ -253,6 +253,11 @@ C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laborator
 C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
 <<<<<<< HEAD
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+=======
+<<<<<<< HEAD
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
@@ -282,4 +287,11 @@ C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Labo
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
 C:\Users\Josue\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+<<<<<<< HEAD
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+=======
+>>>>>>> master
+>>>>>>> master
 >>>>>>> master

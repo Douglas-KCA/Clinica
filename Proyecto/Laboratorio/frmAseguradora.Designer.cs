@@ -33,10 +33,10 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grdAseguradora = new System.Windows.Forms.DataGridView();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
             this.nombreSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ubicacionSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdAseguradora)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +90,17 @@
             this.grdAseguradora.Size = new System.Drawing.Size(506, 234);
             this.grdAseguradora.TabIndex = 13;
             // 
+            // nombreSucursal
+            // 
+            this.nombreSucursal.HeaderText = "No.";
+            this.nombreSucursal.Name = "nombreSucursal";
+            // 
+            // ubicacionSucursal
+            // 
+            this.ubicacionSucursal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ubicacionSucursal.HeaderText = "Nombre";
+            this.ubicacionSucursal.Name = "ubicacionSucursal";
+            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(258, 30);
@@ -107,17 +118,6 @@
             this.lblNombre.Size = new System.Drawing.Size(64, 19);
             this.lblNombre.TabIndex = 14;
             this.lblNombre.Text = "Nombre:";
-            // 
-            // nombreSucursal
-            // 
-            this.nombreSucursal.HeaderText = "No.";
-            this.nombreSucursal.Name = "nombreSucursal";
-            // 
-            // ubicacionSucursal
-            // 
-            this.ubicacionSucursal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ubicacionSucursal.HeaderText = "Nombre";
-            this.ubicacionSucursal.Name = "ubicacionSucursal";
             // 
             // frmAseguradora
             // 
