@@ -11,13 +11,23 @@ using MySql.Data.MySqlClient;
 
 namespace Laboratorio
 {
+/*---------------------------------------------------------------------------------------------------------------------------------
+  Programador y Analista: Josue Revolorio
+* Fecha de asignacion: 07/08/2015
+* Fecha de entrega: 10/08/2015
+---------------------------------------------------------------------------------------------------------------------------------*/
     public partial class frmLogIn : Form
     {
+
         public frmLogIn()
         {
             InitializeComponent();
         }
 
+        /*---------------------------------------------------------------------------------------------------------------------------------
+           Funcion que obtiene el tipo de usuario que se ingresa y envia un parametro al form del menu principal para bloquear o
+           avilitar opciones del menu principal
+        ---------------------------------------------------------------------------------------------------------------------------------*/
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             String sTipo;
@@ -29,11 +39,11 @@ namespace Laboratorio
             {
                 try
                 {
-                    MySqlCommand _comando = new MySqlCommand(String.Format("SELECT ctipousuario FROM USUARIO WHERE cnombreusuario = '{0}' AND cpasswordusuario = '{1}' ", txtUsuario.Text, txtPass.Text), clasConexion.funConexion());
-                    MySqlDataReader _reader = _comando.ExecuteReader();
-                    if (_reader.Read())
+                    MySqlCommand mComando = new MySqlCommand(String.Format("SELECT ctipousuario FROM USUARIO WHERE cnombreusuario = '{0}' AND cpasswordusuario = '{1}' ", txtUsuario.Text, txtPass.Text), clasConexion.funConexion());
+                    MySqlDataReader mReader = mComando.ExecuteReader();
+                    if (mReader.Read())
                     {
-                        sTipo = _reader.GetString(0);
+                        sTipo = mReader.GetString(0);
                         if (sTipo == "secre")
                         {
                             frmMenuPrincipal ver = new frmMenuPrincipal(sTipo);

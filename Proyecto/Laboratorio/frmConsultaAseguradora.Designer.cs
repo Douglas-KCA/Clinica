@@ -40,8 +40,8 @@
             this.Tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Deducible = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpActualizar = new System.Windows.Forms.GroupBox();
-            this.txtActualizarNombre = new System.Windows.Forms.TextBox();
             this.lblActualizarNombre = new System.Windows.Forms.Label();
+            this.txtActualizarNombre = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdConsultarAseguradora)).BeginInit();
             this.grpActualizar.SuspendLayout();
@@ -174,13 +174,6 @@
             this.grpActualizar.TabStop = false;
             this.grpActualizar.Text = "Actualizar";
             // 
-            // txtActualizarNombre
-            // 
-            this.txtActualizarNombre.Location = new System.Drawing.Point(83, 24);
-            this.txtActualizarNombre.Name = "txtActualizarNombre";
-            this.txtActualizarNombre.Size = new System.Drawing.Size(152, 20);
-            this.txtActualizarNombre.TabIndex = 0;
-            // 
             // lblActualizarNombre
             // 
             this.lblActualizarNombre.AutoSize = true;
@@ -190,6 +183,13 @@
             this.lblActualizarNombre.Size = new System.Drawing.Size(64, 19);
             this.lblActualizarNombre.TabIndex = 1;
             this.lblActualizarNombre.Text = "Nombre:";
+            // 
+            // txtActualizarNombre
+            // 
+            this.txtActualizarNombre.Location = new System.Drawing.Point(83, 24);
+            this.txtActualizarNombre.Name = "txtActualizarNombre";
+            this.txtActualizarNombre.Size = new System.Drawing.Size(152, 20);
+            this.txtActualizarNombre.TabIndex = 0;
             // 
             // frmConsultaAseguradora
             // 
@@ -204,6 +204,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaAseguradora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Aseguradoras";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdConsultarAseguradora)).EndInit();
