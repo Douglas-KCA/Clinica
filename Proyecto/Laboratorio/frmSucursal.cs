@@ -30,19 +30,21 @@ namespace Laboratorio
         {
             string sUbicacion;
             string sNombre;
+            string sCodigo;
             int iContador = 0;
             grdSucursal.Rows.Clear();
             try
             {
                 MySqlCommand _comando = new MySqlCommand(String.Format(
-                "SELECT cnombresucursal, cubicacion FROM SUCURSAL"), clasConexion.funConexion());
+                "SELECT ncodsucursal, cnombresucursal, cubicacion FROM SUCURSAL"), clasConexion.funConexion());
                 MySqlDataReader _reader = _comando.ExecuteReader();
 
                 while (_reader.Read())
                 {
-                    sNombre = _reader.GetString(0);
-                    sUbicacion = _reader.GetString(1);
-                    grdSucursal.Rows.Insert(iContador, sNombre, sUbicacion);
+                    sCodigo = _reader.GetString(0);
+                    sNombre = _reader.GetString(1);
+                    sUbicacion = _reader.GetString(2);
+                    grdSucursal.Rows.Insert(iContador, sCodigo, sNombre, sUbicacion);
                     sUbicacion = "";
                     sNombre = "";
                     iContador++;
@@ -74,6 +76,8 @@ namespace Laboratorio
                     comando.ExecuteNonQuery();
                     funActualizar();
                     //MessageBox.Show("Se inserto con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtNombre.Text = "";
+                    txtUbicacion.Text = "";
                 }
 
             }

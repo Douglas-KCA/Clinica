@@ -12,6 +12,22 @@ namespace Laboratorio
 {
     public partial class frmMenuPrincipal : Form
     {
+        public frmMenuPrincipal(String tipo)
+        {
+            InitializeComponent();
+            if(tipo == "secre"){
+                mOtros.Enabled = false;
+            }else if (tipo == "doc")
+            {
+                mPaciente.Enabled = false;
+                mDoctor.Enabled = false;
+                mCitas.Enabled = false;
+                mCotizacion.Enabled = false;
+                mAnalisis.Enabled = false;
+                mOtros.Enabled = false;
+            }
+        }
+
         public frmMenuPrincipal()
         {
             InitializeComponent();
