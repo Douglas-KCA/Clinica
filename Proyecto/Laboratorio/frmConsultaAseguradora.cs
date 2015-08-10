@@ -24,13 +24,26 @@ namespace Laboratorio
             funActualizar();
         }
 
+        void funCancelar()
+        {
+            txtActualizarNombre.Text = "";
+            btnBuscar.Enabled = true;
+            txtNombre.Enabled = true;
+            grpActualizar.Enabled = false;
+            btnActualizar.Enabled = false;
+            btnCancelar.Enabled = false;
+            btnEliminar.Enabled = false;
+            funActualizar();
+            //grdConsultaMembresia.LostFocus=0;
+        }
+
         void funActualizar()
         {
 
             string sCodigo;
             string sNombre;
             int iContador = 0;
-            grdConsultaAseguradora.Rows.Clear();
+            grdConsultarAseguradora.Rows.Clear();
 
             try
             {
@@ -42,12 +55,12 @@ namespace Laboratorio
                 {
                     sCodigo = _reader.GetString(0);
                     sNombre = _reader.GetString(1);
-                    grdConsultaAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
+                    grdConsultarAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
                     sCodigo = "";
                     sNombre = "";
                     iContador++;
                 }
-                grdConsultaAseguradora.ClearSelection();
+                grdConsultarAseguradora.ClearSelection();
 
             }
             catch
@@ -64,7 +77,7 @@ namespace Laboratorio
             string sNombre;
             int iContador = 0;
             bool existe = false;
-            grdConsultaAseguradora.Rows.Clear();
+            grdConsultarAseguradora.Rows.Clear();
 
             try
             {
@@ -85,7 +98,7 @@ namespace Laboratorio
                         existe = true;
                         sCodigo = _reader.GetString(0);
                         sNombre = _reader.GetString(1);
-                        grdConsultaAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
+                        grdConsultarAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
                         sCodigo = "";
                         sNombre = "";
                         iContador++;
@@ -95,15 +108,18 @@ namespace Laboratorio
                     {
                         MessageBox.Show("No se encontraron resultados", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
+
+                    btnCancelar.Enabled = true;
                 }
-                
-                
+
+
 
             }
             catch
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -111,11 +127,12 @@ namespace Laboratorio
             try
             {
                     MySqlCommand comando = new MySqlCommand(string.Format("UPDATE TRASEGURADORA SET cempresaseguro = '{0}' WHERE ncodaseguradora = '{1}'",
-                    txtNombre.Text, sCodigoTabla), clasConexion.funConexion());
+                    txtActualizarNombre.Text, sCodigoTabla), clasConexion.funConexion());
                     comando.ExecuteNonQuery();
                     funActualizar();
                     MessageBox.Show("Se actualizo con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtNombre.Text = "";
+                    funCancelar();
                     funActualizar();
             }
             catch
@@ -126,18 +143,11 @@ namespace Laboratorio
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtNombre.Text = "";
-            funActualizar();
+            funCancelar();
         }
 
         private void grdConsultaAseguradora_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string sNombre;
-            DataGridViewRow fila = grdConsultaAseguradora.CurrentRow;
-            sCodigoTabla = Convert.ToString(fila.Cells[0].Value);
-            sNombre = Convert.ToString(fila.Cells[1].Value);
-            txtNombre.Text = sNombre;
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -150,12 +160,30 @@ namespace Laboratorio
                 funActualizar();
                 MessageBox.Show("Dato eliminado con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNombre.Text = "";
+                funCancelar();
                 funActualizar();
             }
             catch
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } 
+        }
+
+        private void grdConsultarAseguradora_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnActualizar.Enabled = true;
+            btnCancelar.Enabled = true;
+            grpActualizar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnBuscar.Enabled = false;
+            txtNombre.Clear();
+            txtNombre.Enabled = false;
+
+            string sNombre;
+            DataGridViewRow fila = grdConsultarAseguradora.CurrentRow;
+            sCodigoTabla = Convert.ToString(fila.Cells[0].Value);
+            sNombre = Convert.ToString(fila.Cells[1].Value);
+            txtActualizarNombre.Text = sNombre;
         }
     }
 }
