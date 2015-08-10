@@ -1,0 +1,447 @@
+--
+-- ER/Studio 8.0 SQL Code Generation
+-- Company :      company
+-- Project :      ModeloConAI.DM1
+-- Author :       Windows User
+--
+-- Date Created : Friday, August 07, 2015 08:59:30
+-- Target DBMS : MySQL 5.x
+--
+
+-- 
+-- TABLE: ANALIISIS 
+--
+
+CREATE TABLE ANALIISIS(
+    ncodanalisis    INT(10)    NOT NULL AUTO_INCREMENT,
+    cdescripcion    CHAR(250)        NOT NULL,
+    ncodservicio    NUMERIC(10, 0)    NOT NULL,
+    ncodigocita     NUMERIC(10, 0)    NOT NULL,
+    ncodsucursal    NUMERIC(10, 0)    NOT NULL,
+    ncodtipo        NUMERIC(10, 0)    NOT NULL,
+    ncodpaciente    NUMERIC(10, 0)    NOT NULL,
+    ncodetiqueta    NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodanalisis)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: CITA 
+--
+
+CREATE TABLE CITA(
+    ncodigocita     INT(10)    NOT NULL AUTO_INCREMENT,
+    ncodsucursal    NUMERIC(10, 0)    NOT NULL,
+    ncodpaciente    NUMERIC(10, 0)    NOT NULL,
+    dfechacita      DATE              NOT NULL,
+    choracita       CHAR(10)          NOT NULL,
+    PRIMARY KEY (ncodigocita, ncodsucursal, ncodpaciente)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: DEUDA 
+--
+
+CREATE TABLE DEUDA(
+    ncoddeuda      INT(10)    NOT NULL AUTO_INCREMENT,
+    ntotaldeuda    NUMERIC(10, 2)    NOT NULL,
+    nsaldodeuda    NUMERIC(10, 2)    NOT NULL,
+    ncodfactura    NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncoddeuda)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: EMPLEADO 
+--
+
+CREATE TABLE EMPLEADO(
+    ncodempleado    INT(10)    NOT NULL AUTO_INCREMENT,
+    ncodpersona     NUMERIC(10, 0),
+    ncodpuesto      NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodempleado)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: ETIQUETA 
+--
+
+CREATE TABLE ETIQUETA(
+    ncodetiqueta    INT(10)    NOT NULL AUTO_INCREMENT,
+    ncodmuestra     NUMERIC(10, 0)    NOT NULL,
+    ncodpaciente    NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodetiqueta)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: FACTURA 
+--
+
+CREATE TABLE FACTURA(
+    ncodfactura      INT(10)    NOT NULL AUTO_INCREMENT,
+    ctipopago        CHAR(10)          NOT NULL,
+    dfechafactura    DATE              NOT NULL,
+    ncodpaciente     NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodfactura)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: MEMBRESIA 
+--
+
+CREATE TABLE MEMBRESIA(
+    ncodmembresia     INT(10)    NOT NULL AUTO_INCREMENT,
+    ctipomembresia    CHAR(100)         NOT NULL,
+    cporcentaje       CHAR(10)          NOT NULL,
+    PRIMARY KEY (ncodmembresia)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: MrSEGURO 
+--
+
+CREATE TABLE MrSEGURO(
+    ncodseguro         INT(10)    NOT NULL AUTO_INCREMENT,
+    ncodtarifa         NUMERIC(10, 0)    NOT NULL,
+    ncodaseguradora    NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodseguro, ncodtarifa, ncodaseguradora)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: MrTIPOEXAMEN 
+--
+
+CREATE TABLE MrTIPOEXAMEN(
+    ncodtipo             INT(10)    NOT NULL AUTO_INCREMENT,
+    cdesctipoexamen      CHAR(100),
+    cpreciotipoexamen    CHAR(10)          NOT NULL,
+    ncodmuestra          NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodtipo)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: MUESTRA 
+--
+
+CREATE TABLE MUESTRA(
+    ncodmuestra        INT(10)    NOT NULL AUTO_INCREMENT,
+    crequerimientos    CHAR(250),
+    cdescmuestra       CHAR(200)         NOT NULL,
+    PRIMARY KEY (ncodmuestra)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: PACIENTE 
+--
+
+CREATE TABLE PACIENTE(
+    ncodpaciente       INT(10)    NOT NULL AUTO_INCREMENT,
+    crefpaciente       CHAR(100)         NOT NULL,
+    ncodpersona        NUMERIC(10, 0),
+    ncodseguro         NUMERIC(10, 0)    NOT NULL,
+    ncodtarifa         NUMERIC(10, 0)    NOT NULL,
+    ncodaseguradora    NUMERIC(10, 0)    NOT NULL,
+    ncodmembresia      NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodpaciente)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: PERSONA 
+--
+
+CREATE TABLE PERSONA(
+    ncodpersona          INT(10)    NOT NULL AUTO_INCREMENT,
+    cdireccionpersona    CHAR(250)         NOT NULL,
+    cemailpersona        CHAR(100)         NOT NULL,
+    cnombrepersona       CHAR(200)         NOT NULL,
+    capellidopersona     CHAR(250)         NOT NULL,
+    cdpipersona          CHAR(10)          NOT NULL,
+    dfechanacpersona     CHAR(10)          NOT NULL,
+    csexopersona         CHAR(10)          NOT NULL,
+    cnitpersona          CHAR(10)          NOT NULL,
+    PRIMARY KEY (ncodpersona)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: PUESTO 
+--
+
+CREATE TABLE PUESTO(
+    ncodpuesto     INT(10)    NOT NULL AUTO_INCREMENT,
+    ndescpuesto    CHAR(250)        NOT NULL,
+    PRIMARY KEY (ncodpuesto)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: SUCURSAL 
+--
+
+CREATE TABLE SUCURSAL(
+    ncodsucursal    INT(10)    NOT NULL AUTO_INCREMENT,
+    cubicacion      CHAR(100)         NOT NULL,
+    cnombresucursal      CHAR(100)         NOT NULL,
+    PRIMARY KEY (ncodsucursal)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: TrASEGURADORA 
+--
+
+CREATE TABLE TrASEGURADORA(
+    ncodaseguradora    INT(10)    NOT NULL AUTO_INCREMENT,
+    cempresaseguro     CHAR(100)         NOT NULL,
+    PRIMARY KEY (ncodaseguradora)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: TrSERVICIO 
+--
+
+CREATE TABLE TrSERVICIO(
+    ncodservicio      INT(10)    NOT NULL AUTO_INCREMENT,
+    ncodigocita       NUMERIC(10, 0)    NOT NULL,
+    ncodsucursal      NUMERIC(10, 0)    NOT NULL,
+    ncodtipo          NUMERIC(10, 0)    NOT NULL,
+    ncodpaciente      NUMERIC(10, 0)    NOT NULL,
+    dfechaservicio    DATE,
+    ncodempleado      NUMERIC(10, 0)    NOT NULL,
+    ncodfactura       NUMERIC(10, 0)    NOT NULL,
+    PRIMARY KEY (ncodservicio, ncodigocita, ncodsucursal, ncodtipo, ncodpaciente)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: TrTARIFASEGURO 
+--
+
+CREATE TABLE TrTARIFASEGURO(
+    ncodtarifa           INT(10)    NOT NULL AUTO_INCREMENT,
+    nporcentajetarifa    NUMERIC(10, 0)    NOT NULL,
+    ndeducible           NUMERIC(10, 2)    NOT NULL,
+    PRIMARY KEY (ncodtarifa)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: USUARIO 
+--
+
+CREATE TABLE USUARIO(
+    ncodusuario         INT(10)    NOT NULL AUTO_INCREMENT,
+    cnombreusuario      CHAR(100)         NOT NULL,
+    ctipousuario        CHAR(10)          NOT NULL,
+    cpasswordusuario    CHAR(100)         NOT NULL,
+    ncodempleado        NUMERIC(10, 0),
+    PRIMARY KEY (ncodusuario)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: ANALIISIS 
+--
+
+ALTER TABLE ANALIISIS ADD CONSTRAINT RefTrSERVICIO5 
+    FOREIGN KEY (ncodservicio, ncodigocita, ncodsucursal, ncodtipo, ncodpaciente)
+    REFERENCES TrSERVICIO(ncodservicio, ncodigocita, ncodsucursal, ncodtipo, ncodpaciente)
+;
+
+ALTER TABLE ANALIISIS ADD CONSTRAINT RefETIQUETA6 
+    FOREIGN KEY (ncodetiqueta)
+    REFERENCES ETIQUETA(ncodetiqueta)
+;
+
+
+-- 
+-- TABLE: CITA 
+--
+
+ALTER TABLE CITA ADD CONSTRAINT RefSUCURSAL15 
+    FOREIGN KEY (ncodsucursal)
+    REFERENCES SUCURSAL(ncodsucursal)
+;
+
+ALTER TABLE CITA ADD CONSTRAINT RefPACIENTE21 
+    FOREIGN KEY (ncodpaciente)
+    REFERENCES PACIENTE(ncodpaciente)
+;
+
+
+-- 
+-- TABLE: DEUDA 
+--
+
+ALTER TABLE DEUDA ADD CONSTRAINT RefFACTURA8 
+    FOREIGN KEY (ncodfactura)
+    REFERENCES FACTURA(ncodfactura)
+;
+
+
+-- 
+-- TABLE: EMPLEADO 
+--
+
+ALTER TABLE EMPLEADO ADD CONSTRAINT RefPERSONA10 
+    FOREIGN KEY (ncodpersona)
+    REFERENCES PERSONA(ncodpersona)
+;
+
+ALTER TABLE EMPLEADO ADD CONSTRAINT RefPUESTO18 
+    FOREIGN KEY (ncodpuesto)
+    REFERENCES PUESTO(ncodpuesto)
+;
+
+
+-- 
+-- TABLE: ETIQUETA 
+--
+
+ALTER TABLE ETIQUETA ADD CONSTRAINT RefMUESTRA1 
+    FOREIGN KEY (ncodmuestra)
+    REFERENCES MUESTRA(ncodmuestra)
+;
+
+ALTER TABLE ETIQUETA ADD CONSTRAINT RefPACIENTE2 
+    FOREIGN KEY (ncodpaciente)
+    REFERENCES PACIENTE(ncodpaciente)
+;
+
+
+-- 
+-- TABLE: FACTURA 
+--
+
+ALTER TABLE FACTURA ADD CONSTRAINT RefPACIENTE4 
+    FOREIGN KEY (ncodpaciente)
+    REFERENCES PACIENTE(ncodpaciente)
+;
+
+
+-- 
+-- TABLE: MrSEGURO 
+--
+
+ALTER TABLE MrSEGURO ADD CONSTRAINT RefTrTARIFASEGURO11 
+    FOREIGN KEY (ncodtarifa)
+    REFERENCES TrTARIFASEGURO(ncodtarifa)
+;
+
+ALTER TABLE MrSEGURO ADD CONSTRAINT RefTrASEGURADORA12 
+    FOREIGN KEY (ncodaseguradora)
+    REFERENCES TrASEGURADORA(ncodaseguradora)
+;
+
+
+-- 
+-- TABLE: MrTIPOEXAMEN 
+--
+
+ALTER TABLE MrTIPOEXAMEN ADD CONSTRAINT RefMUESTRA19 
+    FOREIGN KEY (ncodmuestra)
+    REFERENCES MUESTRA(ncodmuestra)
+;
+
+
+-- 
+-- TABLE: PACIENTE 
+--
+
+ALTER TABLE PACIENTE ADD CONSTRAINT RefPERSONA9 
+    FOREIGN KEY (ncodpersona)
+    REFERENCES PERSONA(ncodpersona)
+;
+
+ALTER TABLE PACIENTE ADD CONSTRAINT RefMrSEGURO13 
+    FOREIGN KEY (ncodseguro, ncodtarifa, ncodaseguradora)
+    REFERENCES MrSEGURO(ncodseguro, ncodtarifa, ncodaseguradora)
+;
+
+ALTER TABLE PACIENTE ADD CONSTRAINT RefMEMBRESIA14 
+    FOREIGN KEY (ncodmembresia)
+    REFERENCES MEMBRESIA(ncodmembresia)
+;
+
+
+-- 
+-- TABLE: TrSERVICIO 
+--
+
+ALTER TABLE TrSERVICIO ADD CONSTRAINT RefFACTURA3 
+    FOREIGN KEY (ncodfactura)
+    REFERENCES FACTURA(ncodfactura)
+;
+
+ALTER TABLE TrSERVICIO ADD CONSTRAINT RefCITA16 
+    FOREIGN KEY (ncodigocita, ncodsucursal, ncodpaciente)
+    REFERENCES CITA(ncodigocita, ncodsucursal, ncodpaciente)
+;
+
+ALTER TABLE TrSERVICIO ADD CONSTRAINT RefEMPLEADO17 
+    FOREIGN KEY (ncodempleado)
+    REFERENCES EMPLEADO(ncodempleado)
+;
+
+ALTER TABLE TrSERVICIO ADD CONSTRAINT RefMrTIPOEXAMEN20 
+    FOREIGN KEY (ncodtipo)
+    REFERENCES MrTIPOEXAMEN(ncodtipo)
+;
+
+
+-- 
+-- TABLE: USUARIO 
+--
+
+ALTER TABLE USUARIO ADD CONSTRAINT RefEMPLEADO7 
+    FOREIGN KEY (ncodempleado)
+    REFERENCES EMPLEADO(ncodempleado)
+;
+
+

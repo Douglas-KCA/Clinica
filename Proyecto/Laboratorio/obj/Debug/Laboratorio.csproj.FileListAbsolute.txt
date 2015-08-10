@@ -1,0 +1,254 @@
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\bin\Debug\Laboratorio.exe.config
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\bin\Debug\Laboratorio.exe
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\bin\Debug\Laboratorio.pdb
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.exe
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.pdb
+D:\Douglas\UMG\Diseño de Sistemas\Laboratorio\Laboratorio\obj\Debug\Laboratorio.IngresoPaciente.resources
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.IngresoPaciente.resources
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\DylanIsaac\Desktop\8vo Ciclo\Diseño de Sistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.IngresoPaciente.resources
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Josue\Documents\Visual Studio 2013\Projects\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.IngresoSucursal.resources
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\MySql.Data.dll
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\MySql.Data.Entity.dll
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\MySql.Web.dll
+C:\Users\DylanIsaac\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Diego\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Diego\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\jrevm_000\Desktop\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmCita.resources
+C:\Users\Douglas\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\Laboratorio\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\DylanIsaac\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Diego\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Diego\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\LaboratorioClinico\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Diego\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Douglas\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\GitHub\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Josue\Desktop\ProyectoDise-o\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Josue\Desktop\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Josue\Desktop\ProyectoDise-o\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+=======
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmLogIn.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMenuPrincipal.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaAseguradora.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+>>>>>>> 812e757b32d86e99c5748f0973499c11f5b9b1a0
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.LogIn.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.MenuPrincipal.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+>>>>>>> master
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csprojResolveAssemblyReference.cache
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmAseguradora.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaAseguradora.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaCita.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarPuesto.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultarTarifa.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEtiqueta.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMuestra.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmIngresoCita.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPuesto.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmServicio.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTarifaSeguro.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmLogIn.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMenuPrincipal.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.Properties.Resources.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSucursal.resources
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.csproj.GenerateResource.Cache
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.pdb
+C:\Users\Josue\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaSucursal.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaAseguradora.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaSucursal.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEtiqueta.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMenuPrincipal.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmServicio.resources
+C:\Users\Diego\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmLogIn.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaSucursal.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEtiqueta.resources
+C:\Users\DylanIsaac\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmServicio.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaAseguradora.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaSucursal.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEtiqueta.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMembresia.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmMenuPrincipal.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmServicio.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmLogIn.resources
+C:\Users\Douglas\Documents\GitHub\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaMembresia.resources
+C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\bin\Debug\Laboratorio.exe.config
+C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.exe
+C:\Users\Douglas\Desktop\DisenoSistemas\Proyecto\Laboratorio\obj\Debug\Laboratorio.pdb
