@@ -66,7 +66,6 @@
             this.lblPaciente.Size = new System.Drawing.Size(69, 19);
             this.lblPaciente.TabIndex = 14;
             this.lblPaciente.Text = "Paciente:";
-            this.lblPaciente.Click += new System.EventHandler(this.lblUbicacion_Click);
             // 
             // panel1
             // 
@@ -144,7 +143,6 @@
             this.dtpCitas.Name = "dtpCitas";
             this.dtpCitas.Size = new System.Drawing.Size(119, 20);
             this.dtpCitas.TabIndex = 28;
-            this.dtpCitas.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDosPuntos
             // 
@@ -162,66 +160,7 @@
             this.cmbMinutos.FormattingEnabled = true;
             this.cmbMinutos.Items.AddRange(new object[] {
             "00",
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60"});
+            "30"});
             this.cmbMinutos.Location = new System.Drawing.Point(309, 207);
             this.cmbMinutos.Name = "cmbMinutos";
             this.cmbMinutos.Size = new System.Drawing.Size(46, 21);
