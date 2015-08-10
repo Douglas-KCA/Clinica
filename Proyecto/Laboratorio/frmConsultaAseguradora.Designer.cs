@@ -34,17 +34,22 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.grdConsultaAseguradora = new System.Windows.Forms.DataGridView();
-            this.Tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Deducible = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.grdConsultarAseguradora = new System.Windows.Forms.DataGridView();
+            this.Tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Deducible = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grpActualizar = new System.Windows.Forms.GroupBox();
+            this.txtActualizarNombre = new System.Windows.Forms.TextBox();
+            this.lblActualizarNombre = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdConsultaAseguradora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdConsultarAseguradora)).BeginInit();
+            this.grpActualizar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Calibri", 9.75F);
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -73,6 +78,7 @@
             // 
             // btnActualizar
             // 
+            this.btnActualizar.Enabled = false;
             this.btnActualizar.Font = new System.Drawing.Font("Calibri", 9.75F);
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -87,6 +93,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Font = new System.Drawing.Font("Calibri", 9.75F);
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,23 +113,41 @@
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.btnActualizar);
             this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Location = new System.Drawing.Point(12, 25);
+            this.panel1.Location = new System.Drawing.Point(12, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(133, 311);
             this.panel1.TabIndex = 22;
             // 
-            // grdConsultaAseguradora
+            // txtNombre
             // 
-            this.grdConsultaAseguradora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdConsultaAseguradora.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.txtNombre.Location = new System.Drawing.Point(250, 25);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(400, 20);
+            this.txtNombre.TabIndex = 29;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(163, 24);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(64, 19);
+            this.lblNombre.TabIndex = 28;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // grdConsultarAseguradora
+            // 
+            this.grdConsultarAseguradora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdConsultarAseguradora.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Tarifa,
             this.Deducible});
-            this.grdConsultaAseguradora.Location = new System.Drawing.Point(166, 102);
-            this.grdConsultaAseguradora.Name = "grdConsultaAseguradora";
-            this.grdConsultaAseguradora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdConsultaAseguradora.Size = new System.Drawing.Size(506, 234);
-            this.grdConsultaAseguradora.TabIndex = 27;
-            this.grdConsultaAseguradora.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdConsultaAseguradora_CellContentClick);
+            this.grdConsultarAseguradora.Location = new System.Drawing.Point(166, 108);
+            this.grdConsultarAseguradora.Name = "grdConsultarAseguradora";
+            this.grdConsultarAseguradora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdConsultarAseguradora.Size = new System.Drawing.Size(506, 234);
+            this.grdConsultarAseguradora.TabIndex = 34;
+            this.grdConsultarAseguradora.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdConsultarAseguradora_CellContentClick);
             // 
             // Tarifa
             // 
@@ -137,23 +162,34 @@
             this.Deducible.Name = "Deducible";
             this.Deducible.ReadOnly = true;
             // 
-            // txtNombre
+            // grpActualizar
             // 
-            this.txtNombre.Location = new System.Drawing.Point(251, 45);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(400, 20);
-            this.txtNombre.TabIndex = 29;
+            this.grpActualizar.Controls.Add(this.lblActualizarNombre);
+            this.grpActualizar.Controls.Add(this.txtActualizarNombre);
+            this.grpActualizar.Enabled = false;
+            this.grpActualizar.Location = new System.Drawing.Point(167, 52);
+            this.grpActualizar.Name = "grpActualizar";
+            this.grpActualizar.Size = new System.Drawing.Size(483, 50);
+            this.grpActualizar.TabIndex = 36;
+            this.grpActualizar.TabStop = false;
+            this.grpActualizar.Text = "Actualizar";
             // 
-            // lblNombre
+            // txtActualizarNombre
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(164, 44);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(64, 19);
-            this.lblNombre.TabIndex = 28;
-            this.lblNombre.Text = "Nombre:";
+            this.txtActualizarNombre.Location = new System.Drawing.Point(83, 24);
+            this.txtActualizarNombre.Name = "txtActualizarNombre";
+            this.txtActualizarNombre.Size = new System.Drawing.Size(152, 20);
+            this.txtActualizarNombre.TabIndex = 0;
+            // 
+            // lblActualizarNombre
+            // 
+            this.lblActualizarNombre.AutoSize = true;
+            this.lblActualizarNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizarNombre.Location = new System.Drawing.Point(6, 24);
+            this.lblActualizarNombre.Name = "lblActualizarNombre";
+            this.lblActualizarNombre.Size = new System.Drawing.Size(64, 19);
+            this.lblActualizarNombre.TabIndex = 1;
+            this.lblActualizarNombre.Text = "Nombre:";
             // 
             // frmConsultaAseguradora
             // 
@@ -161,15 +197,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.grpActualizar);
+            this.Controls.Add(this.grdConsultarAseguradora);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.grdConsultaAseguradora);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaAseguradora";
             this.Text = "Consultar Aseguradoras";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdConsultaAseguradora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdConsultarAseguradora)).EndInit();
+            this.grpActualizar.ResumeLayout(false);
+            this.grpActualizar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,10 +221,13 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView grdConsultaAseguradora;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.DataGridView grdConsultarAseguradora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tarifa;
         private System.Windows.Forms.DataGridViewTextBoxColumn Deducible;
+        private System.Windows.Forms.GroupBox grpActualizar;
+        private System.Windows.Forms.Label lblActualizarNombre;
+        private System.Windows.Forms.TextBox txtActualizarNombre;
     }
 }
