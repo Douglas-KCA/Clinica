@@ -32,8 +32,8 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -65,13 +65,6 @@
             this.txtUsuario.Size = new System.Drawing.Size(181, 20);
             this.txtUsuario.TabIndex = 2;
             // 
-            // txtPass
-            // 
-            this.txtPass.Location = new System.Drawing.Point(239, 120);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(181, 20);
-            this.txtPass.TabIndex = 3;
-            // 
             // btnEntrar
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,6 +79,14 @@
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(239, 115);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(181, 20);
+            this.txtPass.TabIndex = 5;
+            // 
             // frmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,8 +94,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(534, 261);
-            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblUsuario);
@@ -114,8 +115,8 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.TextBox txtPass;
     }
 }
 

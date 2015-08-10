@@ -17,11 +17,22 @@ namespace Laboratorio
 ---------------------------------------------------------------------------------------------------------------------------------*/
     public partial class frmConsultaSucursal : Form
     {
+        String sNombreEditar;
+        String sUbicacionEditar;
+
+        private void grdSucursal_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            txtActualizarNombre.Text = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[1].Value + "";
+            txtActualizarUbicacion.Text = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[2].Value + "";
+            
+        }
+        
         public frmConsultaSucursal()
         {
             InitializeComponent();
             funActualizar();
         }
+
         /*---------------------------------------------------------------------------------------------------------------------------------
           Funcion que pobla el grid con los datos de la BD
         ---------------------------------------------------------------------------------------------------------------------------------*/
@@ -29,21 +40,24 @@ namespace Laboratorio
         {
             string sUbicacion;
             string sNombre;
+            string sCodigo;
             int iContador = 0;
             grdSucursal.Rows.Clear();
             try
             {
                 MySqlCommand _comando = new MySqlCommand(String.Format(
-                "SELECT cnombresucursal, cubicacion FROM SUCURSAL"), clasConexion.funConexion());
+                "SELECT ncodsucursal, cnombresucursal, cubicacion FROM SUCURSAL"), clasConexion.funConexion());
                 MySqlDataReader _reader = _comando.ExecuteReader();
 
                 while (_reader.Read())
                 {
-                    sNombre = _reader.GetString(0);
-                    sUbicacion = _reader.GetString(1);
-                    grdSucursal.Rows.Insert(iContador, sNombre, sUbicacion);
+                    sCodigo = _reader.GetString(0);
+                    sNombre = _reader.GetString(1);
+                    sUbicacion = _reader.GetString(2);
+                    grdSucursal.Rows.Insert(iContador,sCodigo, sNombre, sUbicacion);
                     sUbicacion = "";
                     sNombre = "";
+                    sCodigo = "";
                     iContador++;
                 }
 
@@ -54,20 +68,12 @@ namespace Laboratorio
             }
 
         }
-        /*---------------------------------------------------------------------------------------------------------------------------------
-          Funcion que filtra los datos del grid a partir de un parametro de busqueda
-        ---------------------------------------------------------------------------------------------------------------------------------*/
-        /*private void CellBeginEdit(object sender,DataGridViewCellCancelEventArgs e)
-        {
-            String sNombre = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[0].Value + "";
-            String sUbicacion = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[1].Value + "";
-            txtNombre.Text = sNombre + sUbicacion;
-        }*/
         
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string sUbicacion;
             string sNombre;
+            string sCodigo;
             int iContador = 0;
             bool existe = false;
             grdSucursal.Rows.Clear();
@@ -82,15 +88,16 @@ namespace Laboratorio
                 else
                 {
                     MySqlCommand _comando = new MySqlCommand(String.Format(
-                    "SELECT cnombresucursal, cubicacion FROM SUCURSAL WHERE cnombresucursal = '{0}' ", txtNombre.Text), clasConexion.funConexion());
+                    "SELECT ncodsucursal, cnombresucursal, cubicacion FROM SUCURSAL WHERE cnombresucursal = '{0}' ", txtNombre.Text), clasConexion.funConexion());
                     MySqlDataReader _reader = _comando.ExecuteReader();
 
                     while (_reader.Read())
                     {
                         existe = true;
-                        sNombre = _reader.GetString(0);
-                        sUbicacion = _reader.GetString(1);
-                        grdSucursal.Rows.Insert(iContador, sNombre, sUbicacion);
+                        sCodigo = _reader.GetString(0);
+                        sNombre = _reader.GetString(1);
+                        sUbicacion = _reader.GetString(2);
+                        grdSucursal.Rows.Insert(iContador, sCodigo, sNombre, sUbicacion);
                         sUbicacion = "";
                         sNombre = "";
                         iContador++;
@@ -123,22 +130,20 @@ namespace Laboratorio
         ---------------------------------------------------------------------------------------------------------------------------------*/
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            int i;
-            for (i = 0; i <= grdSucursal.RowCount -1; i++)
+            try
             {
-                String sNombre = grdSucursal.Rows[i].Cells[0].Value + "";
-                String sUbicacion = grdSucursal.Rows[i].Cells[1].Value + "";
-                try
-                {
-                    MySqlCommand comando = new MySqlCommand(string.Format("UPDATE SUCURSAL SET cubicacion = '{0}', cnombresucursal = '{1}' WHERE ncodsucursal = '{2}'", sUbicacion, sNombre, i+1), clasConexion.funConexion());
-                    comando.ExecuteNonQuery();
-                }
-                catch
-                {
-                    MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MySqlCommand comando = new MySqlCommand(string.Format("UPDATE SUCURSAL SET cnombresucursal = '{0}', cubicacion = '{1}'  WHERE ncodsucursal = '{2}'",
+                txtActualizarNombre.Text,txtActualizarUbicacion, txtActualizarNombre.Text = grdSucursal.Rows[grdSucursal.CurrentCell.RowIndex].Cells[0].Value + ""), clasConexion.funConexion());
+                comando.ExecuteNonQuery();
+                funActualizar();
+                MessageBox.Show("Se actualizo con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNombre.Text = "";
+                funActualizar();
             }
-            funActualizar();
+            catch
+            {
+                MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         /*---------------------------------------------------------------------------------------------------------------------------------
           Funcion que Elimina la fila seleccionada
@@ -147,5 +152,7 @@ namespace Laboratorio
         {
             
         }
+
+        
     }
 }

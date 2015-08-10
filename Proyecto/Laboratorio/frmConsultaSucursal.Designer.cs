@@ -35,12 +35,19 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.grdSucursal = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ubicacionSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.grpActualizar = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtActualizarUbicacion = new System.Windows.Forms.TextBox();
+            this.lblActualizarNombre = new System.Windows.Forms.Label();
+            this.txtActualizarNombre = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdSucursal)).BeginInit();
+            this.grpActualizar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,12 +122,19 @@
             // 
             this.grdSucursal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSucursal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
             this.nombreSucursal,
             this.ubicacionSucursal});
-            this.grdSucursal.Location = new System.Drawing.Point(166, 102);
+            this.grdSucursal.Location = new System.Drawing.Point(166, 127);
             this.grdSucursal.Name = "grdSucursal";
-            this.grdSucursal.Size = new System.Drawing.Size(506, 234);
+            this.grdSucursal.Size = new System.Drawing.Size(506, 209);
             this.grdSucursal.TabIndex = 35;
+            this.grdSucursal.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSucursal_CellEnter);
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
             // 
             // nombreSucursal
             // 
@@ -135,7 +149,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(272, 61);
+            this.txtNombre.Location = new System.Drawing.Point(272, 25);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(400, 20);
             this.txtNombre.TabIndex = 34;
@@ -145,11 +159,58 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(161, 61);
+            this.lblNombre.Location = new System.Drawing.Point(161, 25);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(64, 19);
             this.lblNombre.TabIndex = 33;
             this.lblNombre.Text = "Nombre:";
+            // 
+            // grpActualizar
+            // 
+            this.grpActualizar.Controls.Add(this.label1);
+            this.grpActualizar.Controls.Add(this.txtActualizarUbicacion);
+            this.grpActualizar.Controls.Add(this.lblActualizarNombre);
+            this.grpActualizar.Controls.Add(this.txtActualizarNombre);
+            this.grpActualizar.Location = new System.Drawing.Point(166, 60);
+            this.grpActualizar.Name = "grpActualizar";
+            this.grpActualizar.Size = new System.Drawing.Size(506, 50);
+            this.grpActualizar.TabIndex = 37;
+            this.grpActualizar.TabStop = false;
+            this.grpActualizar.Text = "Actualizar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(255, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Ubicacion:";
+            // 
+            // txtActualizarUbicacion
+            // 
+            this.txtActualizarUbicacion.Location = new System.Drawing.Point(332, 25);
+            this.txtActualizarUbicacion.Name = "txtActualizarUbicacion";
+            this.txtActualizarUbicacion.Size = new System.Drawing.Size(152, 20);
+            this.txtActualizarUbicacion.TabIndex = 2;
+            // 
+            // lblActualizarNombre
+            // 
+            this.lblActualizarNombre.AutoSize = true;
+            this.lblActualizarNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualizarNombre.Location = new System.Drawing.Point(6, 24);
+            this.lblActualizarNombre.Name = "lblActualizarNombre";
+            this.lblActualizarNombre.Size = new System.Drawing.Size(64, 19);
+            this.lblActualizarNombre.TabIndex = 1;
+            this.lblActualizarNombre.Text = "Nombre:";
+            // 
+            // txtActualizarNombre
+            // 
+            this.txtActualizarNombre.Location = new System.Drawing.Point(83, 24);
+            this.txtActualizarNombre.Name = "txtActualizarNombre";
+            this.txtActualizarNombre.Size = new System.Drawing.Size(152, 20);
+            this.txtActualizarNombre.TabIndex = 0;
             // 
             // frmConsultaSucursal
             // 
@@ -157,6 +218,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.grpActualizar);
             this.Controls.Add(this.grdSucursal);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
@@ -166,6 +228,8 @@
             this.Text = "Consulta y Modificacion Sucursal";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdSucursal)).EndInit();
+            this.grpActualizar.ResumeLayout(false);
+            this.grpActualizar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,9 +243,15 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView grdSucursal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreSucursal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ubicacionSucursal;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.GroupBox grpActualizar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtActualizarUbicacion;
+        private System.Windows.Forms.Label lblActualizarNombre;
+        private System.Windows.Forms.TextBox txtActualizarNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreSucursal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ubicacionSucursal;
     }
 }
