@@ -37,6 +37,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.grdSucursal = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ubicacionSucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -121,12 +122,18 @@
             // 
             this.grdSucursal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdSucursal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
             this.nombreSucursal,
             this.ubicacionSucursal});
             this.grdSucursal.Location = new System.Drawing.Point(165, 107);
             this.grdSucursal.Name = "grdSucursal";
             this.grdSucursal.Size = new System.Drawing.Size(506, 234);
             this.grdSucursal.TabIndex = 12;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
             // 
             // nombreSucursal
             // 
@@ -171,6 +178,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.DataGridView grdSucursal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreSucursal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ubicacionSucursal;
     }
