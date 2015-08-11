@@ -70,6 +70,12 @@
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> master
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,12 +191,14 @@
             this.sbmIngresarMuestra.Name = "sbmIngresarMuestra";
             this.sbmIngresarMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmIngresarMuestra.Text = "Ingresar";
+            this.sbmIngresarMuestra.Click += new System.EventHandler(this.sbmIngresarMuestra_Click);
             // 
             // sbmConsultaMuestra
             // 
             this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
             this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmConsultaMuestra.Text = "Modificar y Consultar";
+            this.sbmConsultaMuestra.Click += new System.EventHandler(this.sbmConsultaMuestra_Click);
             // 
             // mExamenes
             // 
@@ -274,7 +282,8 @@
             this.AseguradoraToolStripMenuItem,
             this.puestoToolStripMenuItem,
             this.tarifaToolStripMenuItem,
-            this.sbmMembresia});
+            this.sbmMembresia,
+            this.seguroToolStripMenuItem});
             this.mOtros.Font = new System.Drawing.Font("Calibri", 12F);
             this.mOtros.Name = "mOtros";
             this.mOtros.Size = new System.Drawing.Size(57, 23);
@@ -412,6 +421,32 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+<<<<<<< HEAD
+            // seguroToolStripMenuItem
+            // 
+            this.seguroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresoToolStripMenuItem2,
+            this.consultaYModificacionToolStripMenuItem});
+            this.seguroToolStripMenuItem.Name = "seguroToolStripMenuItem";
+            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
+            this.seguroToolStripMenuItem.Text = "Seguro";
+            // 
+            // ingresoToolStripMenuItem2
+            // 
+            this.ingresoToolStripMenuItem2.Name = "ingresoToolStripMenuItem2";
+            this.ingresoToolStripMenuItem2.Size = new System.Drawing.Size(216, 24);
+            this.ingresoToolStripMenuItem2.Text = "Ingreso";
+            this.ingresoToolStripMenuItem2.Click += new System.EventHandler(this.ingresoToolStripMenuItem2_Click);
+            // 
+            // consultaYModificacionToolStripMenuItem
+            // 
+            this.consultaYModificacionToolStripMenuItem.Name = "consultaYModificacionToolStripMenuItem";
+            this.consultaYModificacionToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.consultaYModificacionToolStripMenuItem.Text = "Consultar y Modificar";
+            this.consultaYModificacionToolStripMenuItem.Click += new System.EventHandler(this.consultaYModificacionToolStripMenuItem_Click);
+            // 
+=======
+>>>>>>> master
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,5 +512,8 @@
         private System.Windows.Forms.ToolStripMenuItem mAnalisis;
         private System.Windows.Forms.ToolStripMenuItem ingresarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem consultarYModificarToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem seguroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultaYModificacionToolStripMenuItem;
     }
 }

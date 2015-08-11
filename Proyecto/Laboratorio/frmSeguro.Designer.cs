@@ -35,7 +35,7 @@
             this.lblAseguradora = new System.Windows.Forms.Label();
             this.lblTarifa = new System.Windows.Forms.Label();
             this.cmbAseguradora = new System.Windows.Forms.ComboBox();
-            this.cmTarifa = new System.Windows.Forms.ComboBox();
+            this.cmbTarifa = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblAseguradora
             // 
@@ -106,13 +107,13 @@
             this.cmbAseguradora.Size = new System.Drawing.Size(262, 21);
             this.cmbAseguradora.TabIndex = 17;
             // 
-            // cmTarifa
+            // cmbTarifa
             // 
-            this.cmTarifa.FormattingEnabled = true;
-            this.cmTarifa.Location = new System.Drawing.Point(185, 214);
-            this.cmTarifa.Name = "cmTarifa";
-            this.cmTarifa.Size = new System.Drawing.Size(262, 21);
-            this.cmTarifa.TabIndex = 18;
+            this.cmbTarifa.FormattingEnabled = true;
+            this.cmbTarifa.Location = new System.Drawing.Point(185, 214);
+            this.cmbTarifa.Name = "cmbTarifa";
+            this.cmbTarifa.Size = new System.Drawing.Size(262, 21);
+            this.cmbTarifa.TabIndex = 18;
             // 
             // frmSeguro
             // 
@@ -120,7 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(684, 361);
-            this.Controls.Add(this.cmTarifa);
+            this.Controls.Add(this.cmbTarifa);
             this.Controls.Add(this.cmbAseguradora);
             this.Controls.Add(this.lblTarifa);
             this.Controls.Add(this.lblAseguradora);
@@ -143,6 +144,6 @@
         private System.Windows.Forms.Label lblAseguradora;
         private System.Windows.Forms.Label lblTarifa;
         private System.Windows.Forms.ComboBox cmbAseguradora;
-        private System.Windows.Forms.ComboBox cmTarifa;
+        private System.Windows.Forms.ComboBox cmbTarifa;
     }
 }

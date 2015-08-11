@@ -164,9 +164,32 @@ namespace Laboratorio
             ver.Show();
         }
 
+<<<<<<< HEAD
+        private void consultaYModificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmSeguro ver = new frmSeguro();
+=======
+<<<<<<< HEAD
+        private void sbmConsultaMuestra_Click(object sender, EventArgs e)
+        {
+            frmConsultaMuestra ver = new frmConsultaMuestra();
+            ver.Show();
+        }
+
+        private void sbmIngresarMuestra_Click(object sender, EventArgs e)
+        {
+            frmMuestra ver = new frmMuestra();
+=======
         private void sbmIngresarEmpleado_Click(object sender, EventArgs e)
         {
             frmEmpleados ver = new frmEmpleados();
+>>>>>>> master
+>>>>>>> master
             ver.Show();
         }
     }
