@@ -158,5 +158,16 @@ namespace Laboratorio
             frmConsultaMembresia ver = new frmConsultaMembresia();
             ver.Show();
         }
+
+        private void consultaYModificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmSeguro ver = new frmSeguro();
+            ver.Show();
+        }
     }
 }
