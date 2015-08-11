@@ -12,9 +12,10 @@ using MySql.Data.MySqlClient;
 namespace Laboratorio
 {
     /*
-     * Programador: Dylan Corado
-     *   
-    */ 
+     * Programador y Analista: Dylan Corado
+     * Fecha de Asignacion: 03 de Agosto
+     * Fecha de Entrega: 05 de Agosto  
+    */
     public partial class frmAseguradora : Form
     {
         public frmAseguradora()
@@ -67,9 +68,9 @@ namespace Laboratorio
                 }
                 else
                 {
-                    MySqlCommand comando = new MySqlCommand(string.Format("Insert into TRASEGURADORA (cempresaseguro) values ('{0}')",
+                    MySqlCommand mComando = new MySqlCommand(string.Format("Insert into TRASEGURADORA (cempresaseguro) values ('{0}')",
                     txtNombre.Text), clasConexion.funConexion());
-                    comando.ExecuteNonQuery();
+                    mComando.ExecuteNonQuery();
                     funActualizar();
                     MessageBox.Show("Se inserto con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

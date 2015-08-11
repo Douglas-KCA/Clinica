@@ -39,7 +39,7 @@
             this.lblActualizarDescripcion = new System.Windows.Forms.Label();
             this.txtActualizarRequerimientos = new System.Windows.Forms.TextBox();
             this.lblActualizarRequerimientos = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.grdConsultaMuestra = new System.Windows.Forms.DataGridView();
             this.Tarifa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +75,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnBuscar
             // 
@@ -88,6 +89,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnActualizar
             // 
@@ -102,6 +104,7 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCancelar
             // 
@@ -116,6 +119,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // grpActualizar
             // 
@@ -169,12 +173,12 @@
             this.lblActualizarRequerimientos.TabIndex = 32;
             this.lblActualizarRequerimientos.Text = "Requerimientos:";
             // 
-            // txtNombre
+            // txtDescripcion
             // 
-            this.txtNombre.Location = new System.Drawing.Point(248, 29);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(415, 20);
-            this.txtNombre.TabIndex = 37;
+            this.txtDescripcion.Location = new System.Drawing.Point(248, 29);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(415, 20);
+            this.txtDescripcion.TabIndex = 37;
             // 
             // lblNombre
             // 
@@ -199,6 +203,7 @@
             this.grdConsultaMuestra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdConsultaMuestra.Size = new System.Drawing.Size(506, 153);
             this.grdConsultaMuestra.TabIndex = 35;
+            this.grdConsultaMuestra.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdConsultaMuestra_CellContentClick);
             // 
             // Tarifa
             // 
@@ -224,7 +229,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.grpActualizar);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.grdConsultaMuestra);
             this.Controls.Add(this.pnlBotones);
@@ -251,7 +256,7 @@
         private System.Windows.Forms.Label lblActualizarDescripcion;
         private System.Windows.Forms.TextBox txtActualizarRequerimientos;
         private System.Windows.Forms.Label lblActualizarRequerimientos;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.DataGridView grdConsultaMuestra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tarifa;

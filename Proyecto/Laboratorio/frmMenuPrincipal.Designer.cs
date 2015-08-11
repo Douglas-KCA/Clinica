@@ -33,9 +33,9 @@
             this.mPaciente = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmIngresarPaciente = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmModificarPaciente = new System.Windows.Forms.ToolStripMenuItem();
-            this.mDoctor = new System.Windows.Forms.ToolStripMenuItem();
-            this.sbmIngresarDoctor = new System.Windows.Forms.ToolStripMenuItem();
-            this.sbmModificarDoctor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mEmpleado = new System.Windows.Forms.ToolStripMenuItem();
+            this.sbmIngresarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
+            this.sbmModificarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
             this.mCitas = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmIngresarCitas = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmModificarCitas = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,9 +70,12 @@
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> master
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +83,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mPaciente,
-            this.mDoctor,
+            this.mEmpleado,
             this.mCitas,
             this.mMuestra,
             this.mExamenes,
@@ -118,27 +121,28 @@
             this.sbmModificarPaciente.Text = "Modificar y Consultar";
             this.sbmModificarPaciente.Click += new System.EventHandler(this.sbmModificarPaciente_Click);
             // 
-            // mDoctor
+            // mEmpleado
             // 
-            this.mDoctor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sbmIngresarDoctor,
-            this.sbmModificarDoctor});
-            this.mDoctor.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mDoctor.Name = "mDoctor";
-            this.mDoctor.Size = new System.Drawing.Size(64, 23);
-            this.mDoctor.Text = "Doctor";
+            this.mEmpleado.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sbmIngresarEmpleado,
+            this.sbmModificarEmpleado});
+            this.mEmpleado.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mEmpleado.Name = "mEmpleado";
+            this.mEmpleado.Size = new System.Drawing.Size(85, 23);
+            this.mEmpleado.Text = "Empleado";
             // 
-            // sbmIngresarDoctor
+            // sbmIngresarEmpleado
             // 
-            this.sbmIngresarDoctor.Name = "sbmIngresarDoctor";
-            this.sbmIngresarDoctor.Size = new System.Drawing.Size(216, 24);
-            this.sbmIngresarDoctor.Text = "Ingresar";
+            this.sbmIngresarEmpleado.Name = "sbmIngresarEmpleado";
+            this.sbmIngresarEmpleado.Size = new System.Drawing.Size(216, 24);
+            this.sbmIngresarEmpleado.Text = "Ingresar";
+            this.sbmIngresarEmpleado.Click += new System.EventHandler(this.sbmIngresarEmpleado_Click);
             // 
-            // sbmModificarDoctor
+            // sbmModificarEmpleado
             // 
-            this.sbmModificarDoctor.Name = "sbmModificarDoctor";
-            this.sbmModificarDoctor.Size = new System.Drawing.Size(216, 24);
-            this.sbmModificarDoctor.Text = "Modificar y Consultar";
+            this.sbmModificarEmpleado.Name = "sbmModificarEmpleado";
+            this.sbmModificarEmpleado.Size = new System.Drawing.Size(216, 24);
+            this.sbmModificarEmpleado.Text = "Modificar y Consultar";
             // 
             // mCitas
             // 
@@ -187,12 +191,14 @@
             this.sbmIngresarMuestra.Name = "sbmIngresarMuestra";
             this.sbmIngresarMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmIngresarMuestra.Text = "Ingresar";
+            this.sbmIngresarMuestra.Click += new System.EventHandler(this.sbmIngresarMuestra_Click);
             // 
             // sbmConsultaMuestra
             // 
             this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
             this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmConsultaMuestra.Text = "Modificar y Consultar";
+            this.sbmConsultaMuestra.Click += new System.EventHandler(this.sbmConsultaMuestra_Click);
             // 
             // mExamenes
             // 
@@ -415,6 +421,7 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+<<<<<<< HEAD
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -438,6 +445,8 @@
             this.consultaYModificacionToolStripMenuItem.Text = "Consultar y Modificar";
             this.consultaYModificacionToolStripMenuItem.Click += new System.EventHandler(this.consultaYModificacionToolStripMenuItem_Click);
             // 
+=======
+>>>>>>> master
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,9 +475,9 @@
         private System.Windows.Forms.ToolStripMenuItem mPaciente;
         private System.Windows.Forms.ToolStripMenuItem sbmIngresarPaciente;
         private System.Windows.Forms.ToolStripMenuItem sbmModificarPaciente;
-        private System.Windows.Forms.ToolStripMenuItem mDoctor;
-        private System.Windows.Forms.ToolStripMenuItem sbmIngresarDoctor;
-        private System.Windows.Forms.ToolStripMenuItem sbmModificarDoctor;
+        private System.Windows.Forms.ToolStripMenuItem mEmpleado;
+        private System.Windows.Forms.ToolStripMenuItem sbmIngresarEmpleado;
+        private System.Windows.Forms.ToolStripMenuItem sbmModificarEmpleado;
         private System.Windows.Forms.ToolStripMenuItem mCitas;
         private System.Windows.Forms.ToolStripMenuItem sbmIngresarCitas;
         private System.Windows.Forms.ToolStripMenuItem sbmModificarCitas;
