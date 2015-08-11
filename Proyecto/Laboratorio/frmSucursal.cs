@@ -12,11 +12,13 @@ using MySql.Data.MySqlClient;
 namespace Laboratorio
 {
 /*---------------------------------------------------------------------------------------------------------------------------------
-  Programador: Josue Revolorio
-  Analista: Kevin Cajbon 
+  Programador y Analista: Josue Revolorio
+  * Fecha de asignacion: 07/08/2015
+  * Fecha de entrega: 08/08/2015
 ---------------------------------------------------------------------------------------------------------------------------------*/
     public partial class frmSucursal : Form
     {
+        
         public frmSucursal()
         {
             InitializeComponent();
@@ -35,15 +37,15 @@ namespace Laboratorio
             grdSucursal.Rows.Clear();
             try
             {
-                MySqlCommand _comando = new MySqlCommand(String.Format(
+                MySqlCommand mComando = new MySqlCommand(String.Format(
                 "SELECT ncodsucursal, cnombresucursal, cubicacion FROM SUCURSAL"), clasConexion.funConexion());
-                MySqlDataReader _reader = _comando.ExecuteReader();
+                MySqlDataReader mReader = mComando.ExecuteReader();
 
-                while (_reader.Read())
+                while (mReader.Read())
                 {
-                    sCodigo = _reader.GetString(0);
-                    sNombre = _reader.GetString(1);
-                    sUbicacion = _reader.GetString(2);
+                    sCodigo = mReader.GetString(0);
+                    sNombre = mReader.GetString(1);
+                    sUbicacion = mReader.GetString(2);
                     grdSucursal.Rows.Insert(iContador, sCodigo, sNombre, sUbicacion);
                     sUbicacion = "";
                     sNombre = "";
@@ -75,7 +77,6 @@ namespace Laboratorio
                     txtNombre.Text, txtUbicacion.Text), clasConexion.funConexion());
                     comando.ExecuteNonQuery();
                     funActualizar();
-                    //MessageBox.Show("Se inserto con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtNombre.Text = "";
                     txtUbicacion.Text = "";
                 }
@@ -88,6 +89,9 @@ namespace Laboratorio
 
         }
 
+        /*---------------------------------------------------------------------------------------------------------------------------------
+          Funcion que limpia los textbox o combobox
+        ---------------------------------------------------------------------------------------------------------------------------------*/
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNombre.Text = "";
