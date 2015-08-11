@@ -19,15 +19,21 @@ namespace Laboratorio
     public partial class frmConsultaSucursal : Form
     {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 //<<<<<<< HEAD
         //String sNombreEditar;
         //String sUbicacionEditar;
 //=======
+<<<<<<< HEAD
+=======
 =======
 
         //String sNombreEditar;
         //String sUbicacionEditar;
 
+>>>>>>> master
 >>>>>>> master
         public frmConsultaSucursal()
         {
@@ -35,6 +41,9 @@ namespace Laboratorio
             funActualizar();
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 //>>>>>>> master
 
 =======

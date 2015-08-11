@@ -15,6 +15,13 @@ namespace Laboratorio
 
     public partial class frmConsultarTarifa : Form
     {
+        /*---------------------------------------------------------------------------------------------------
+         * Programador: Diego Taracena
+         * Fecha de Astignacion: 03 de agosto
+         * Fecha de Entrega: 05 de Agosto
+         * -------------------------------------------------------------------------------------------------- 
+        */
+
         string sCodigoTabla;
         public frmConsultarTarifa()
         {

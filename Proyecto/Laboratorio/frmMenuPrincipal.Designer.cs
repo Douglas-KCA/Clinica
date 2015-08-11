@@ -70,6 +70,13 @@
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
 <<<<<<< HEAD
+            this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+=======
+<<<<<<< HEAD
             this.btnSalir = new System.Windows.Forms.Button();
 //<<<<<<< HEAD
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +90,9 @@
             this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
 >>>>>>> master
+>>>>>>> master
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -416,6 +425,8 @@
             this.msbmConsultaryModificar.Click += new System.EventHandler(this.msbmConsultaryModificar_Click);
             // 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,6 +443,7 @@
             // 
 //<<<<<<< HEAD
 =======
+>>>>>>> master
 >>>>>>> master
             // seguroToolStripMenuItem
             // 
@@ -457,9 +469,12 @@
             this.consultaYModificacionToolStripMenuItem.Click += new System.EventHandler(this.consultaYModificacionToolStripMenuItem_Click);
             // 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 //=======
 //>>>>>>> master
 =======
+>>>>>>> master
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -474,6 +489,18 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+<<<<<<< HEAD
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(526, 246);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(293, 268);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+=======
+>>>>>>> master
 >>>>>>> master
             // frmMenuPrincipal
             // 
@@ -482,6 +509,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -492,6 +520,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,5 +572,6 @@
         private System.Windows.Forms.ToolStripMenuItem seguroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem consultaYModificacionToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
