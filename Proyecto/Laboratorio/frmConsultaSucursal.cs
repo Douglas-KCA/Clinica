@@ -17,8 +17,8 @@ namespace Laboratorio
 ---------------------------------------------------------------------------------------------------------------------------------*/
     public partial class frmConsultaSucursal : Form
     {
-        String sNombreEditar;
-        String sUbicacionEditar;
+        //String sNombreEditar;
+        //String sUbicacionEditar;
 
         private void grdSucursal_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
