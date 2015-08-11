@@ -70,12 +70,12 @@
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
-<<<<<<< HEAD
+//<<<<<<< HEAD
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-=======
->>>>>>> master
+//=======
+//>>>>>>> master
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -421,7 +421,7 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-<<<<<<< HEAD
+//<<<<<<< HEAD
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -445,8 +445,8 @@
             this.consultaYModificacionToolStripMenuItem.Text = "Consultar y Modificar";
             this.consultaYModificacionToolStripMenuItem.Click += new System.EventHandler(this.consultaYModificacionToolStripMenuItem_Click);
             // 
-=======
->>>>>>> master
+//=======
+//>>>>>>> master
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
