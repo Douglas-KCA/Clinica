@@ -20,7 +20,7 @@ namespace Laboratorio
             }else if (tipo == "doc")
             {
                 mPaciente.Enabled = false;
-                mDoctor.Enabled = false;
+                mEmpleado.Enabled = false;
                 mCitas.Enabled = false;
                 mCotizacion.Enabled = false;
                 mAnalisis.Enabled = false;
@@ -40,9 +40,14 @@ namespace Laboratorio
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            frmLogIn ver = new frmLogIn();
-            ver.Show();
-            this.Close();
+            
+            if (MessageBox.Show("¿Desea cerrar sesion?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                frmLogIn ver = new frmLogIn();
+                ver.Show();
+                this.Close();
+            }  
+            
         }
 
         private void mCotizacion_Click(object sender, EventArgs e)
@@ -159,6 +164,7 @@ namespace Laboratorio
             ver.Show();
         }
 
+<<<<<<< HEAD
         private void sbmConsultaMuestra_Click(object sender, EventArgs e)
         {
             frmConsultaMuestra ver = new frmConsultaMuestra();
@@ -168,6 +174,11 @@ namespace Laboratorio
         private void sbmIngresarMuestra_Click(object sender, EventArgs e)
         {
             frmMuestra ver = new frmMuestra();
+=======
+        private void sbmIngresarEmpleado_Click(object sender, EventArgs e)
+        {
+            frmEmpleados ver = new frmEmpleados();
+>>>>>>> master
             ver.Show();
         }
     }
