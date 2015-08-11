@@ -10,19 +10,22 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Laboratorio
-{
-    /*
-     * Programador: Kevin Cajbon
-     *   
-    */ 
+{ 
     public partial class frmMuestra : Form
     {
+        /*
+         * Programador: Kevin Cajbon
+         * Fecha de Astignacion: 01 de agosto
+         * Fecha de Entrega: 03 de Agosto
+         *   
+        */
+
         public frmMuestra()
         {
             InitializeComponent();
         }
 
-        void limpiar() {
+        void funLimpiar() {
             txtRequerimientos.Clear();
             txtDescripcionMuestra.Clear();
         }
@@ -35,24 +38,23 @@ namespace Laboratorio
                 {
                     MessageBox.Show("Por favor llene todos los campos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }else{
-                    MySqlCommand comando = new MySqlCommand(string.Format("Insert into MUESTRA(crequerimientos, cdescmuestra)  values ('{0}','{1}')",
-                    txtRequerimientos.Text, txtDescripcionMuestra), clasConexion.funConexion());
-                    comando.ExecuteNonQuery();
+                    MySqlCommand mComando = new MySqlCommand(string.Format("Insert into MUESTRA(crequerimientos, cdescmuestra)  values ('{0}','{1}')",
+                    txtRequerimientos.Text, txtDescripcionMuestra.Text), clasConexion.funConexion());
+                    mComando.ExecuteNonQuery();
                     MessageBox.Show("Se inserto con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    limpiar();
+                    funLimpiar();
                 }
             }
             catch
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpiar();
+                funLimpiar();
             }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtRequerimientos.Clear();
-            txtDescripcionMuestra.Clear();
+            funLimpiar();
         }
     }
 }

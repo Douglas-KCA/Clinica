@@ -185,12 +185,14 @@
             this.sbmIngresarMuestra.Name = "sbmIngresarMuestra";
             this.sbmIngresarMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmIngresarMuestra.Text = "Ingresar";
+            this.sbmIngresarMuestra.Click += new System.EventHandler(this.sbmIngresarMuestra_Click);
             // 
             // sbmConsultaMuestra
             // 
             this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
             this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmConsultaMuestra.Text = "Modificar y Consultar";
+            this.sbmConsultaMuestra.Click += new System.EventHandler(this.sbmConsultaMuestra_Click);
             // 
             // mExamenes
             // 

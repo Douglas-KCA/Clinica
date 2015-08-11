@@ -15,7 +15,9 @@ namespace Laboratorio
     {
         /*
          * Programador: Kevin Cajbon
-         * 
+         * Fecha de Astignacion: 01 de agosto
+         * Fecha de Entrega: 02 de Agosto
+         *   
         */
 
         string sActualizarCodigo;
@@ -26,8 +28,9 @@ namespace Laboratorio
         }
 
         void funCancelar() {
-            txtActualizarTipo.Text = "";
-            txtActualizarPorcentaje.Text = "";
+            txtActualizarTipo.Clear();
+            txtActualizarPorcentaje.Clear();
+            txtTipo.Clear();
             btnBuscar.Enabled = true;
             txtTipo.Enabled = true;
             grpActualizar.Enabled = false;
@@ -35,8 +38,8 @@ namespace Laboratorio
             btnCancelar.Enabled = false;
             btnEliminar.Enabled = false;
             funActualizar();
-            //grdConsultaMembresia.LostFocus=0;
         }
+
         void funActualizar()
         {
 
@@ -48,15 +51,15 @@ namespace Laboratorio
 
             try
             {
-                MySqlCommand _comando = new MySqlCommand(String.Format(
+                MySqlCommand mComando = new MySqlCommand(String.Format(
                 "SELECT * FROM MEMBRESIA"), clasConexion.funConexion());
-                MySqlDataReader _reader = _comando.ExecuteReader();
+                MySqlDataReader mReader = mComando.ExecuteReader();
 
-                while (_reader.Read())
+                while (mReader.Read())
                 {
-                    sCodigo = _reader.GetString(0);
-                    sTipo = _reader.GetString(1);
-                    sPorcentaje = _reader.GetString(2);
+                    sCodigo = mReader.GetString(0);
+                    sTipo = mReader.GetString(1);
+                    sPorcentaje = mReader.GetString(2);
                     grdConsultaMembresia.Rows.Insert(iContador,sCodigo, sTipo, sPorcentaje);
                     sCodigo = "";
                     sTipo = "";
@@ -92,16 +95,16 @@ namespace Laboratorio
                 }
                 else
                 {
-                    MySqlCommand _comando = new MySqlCommand(String.Format(
+                    MySqlCommand mComando = new MySqlCommand(String.Format(
                     "SELECT * FROM MEMBRESIA WHERE ctipomembresia = '{0}' ", txtTipo.Text), clasConexion.funConexion());
-                    MySqlDataReader _reader = _comando.ExecuteReader();
+                    MySqlDataReader mReader = mComando.ExecuteReader();
 
-                    while (_reader.Read())
+                    while (mReader.Read())
                     {
                         existe = true;
-                        sCodigo = _reader.GetString(0);
-                        sNombre = _reader.GetString(1);
-                        sPorcentaje = _reader.GetString(2);
+                        sCodigo = mReader.GetString(0);
+                        sNombre = mReader.GetString(1);
+                        sPorcentaje = mReader.GetString(2);
                         grdConsultaMembresia.Rows.Insert(iContador, sCodigo, sNombre, sPorcentaje);
                         sCodigo = "";
                         sNombre = "";
@@ -115,24 +118,20 @@ namespace Laboratorio
                     }
                     btnCancelar.Enabled = true;
                 }
-
-
-
             }
             catch
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("UPDATE MEMBRESIA SET ctipomembresia = '{0}', cporcentaje ='{1}' WHERE ncodmembresia = '{2}'",
+                MySqlCommand mComando = new MySqlCommand(string.Format("UPDATE MEMBRESIA SET ctipomembresia = '{0}', cporcentaje ='{1}' WHERE ncodmembresia = '{2}'",
                 txtActualizarTipo.Text, txtActualizarPorcentaje.Text, sActualizarCodigo), clasConexion.funConexion());
-                comando.ExecuteNonQuery();
+                mComando.ExecuteNonQuery();
                 funActualizar();
                 MessageBox.Show("Se actualizo con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 funCancelar();
@@ -146,7 +145,6 @@ namespace Laboratorio
 
         private void grdConsultaMembresia_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //string sNombre;
             btnActualizar.Enabled = true;
             btnCancelar.Enabled = true;
             grpActualizar.Enabled = true;
@@ -158,7 +156,6 @@ namespace Laboratorio
             sActualizarCodigo = Convert.ToString(fila.Cells[0].Value);
             txtActualizarTipo.Text = Convert.ToString(fila.Cells[1].Value);
             txtActualizarPorcentaje.Text = Convert.ToString(fila.Cells[2].Value);
-            //txtNombre.Text = sNombre;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -170,9 +167,9 @@ namespace Laboratorio
         {
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("DELETE FROM MEMBRESIA WHERE ncodmembresia = '{0}'",
+                MySqlCommand mComando = new MySqlCommand(string.Format("DELETE FROM MEMBRESIA WHERE ncodmembresia = '{0}'",
                 sActualizarCodigo), clasConexion.funConexion());
-                comando.ExecuteNonQuery();
+                mComando.ExecuteNonQuery();
                 funActualizar();
                 MessageBox.Show("Dato eliminado con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 funCancelar();
