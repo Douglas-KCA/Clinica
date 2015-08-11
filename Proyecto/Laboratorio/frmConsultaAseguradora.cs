@@ -14,8 +14,9 @@ namespace Laboratorio
     public partial class frmConsultaAseguradora : Form
     {
         /*
-         * Programador: Dylan Corado
-         * 
+         * Programador y Analista: Dylan Corado
+         * Fecha de Asignacion: 03 de Agosto
+         * Fecha de Entrega: 04 de Agosto
         */
         string sCodigoTabla;
         public frmConsultaAseguradora()
@@ -47,14 +48,14 @@ namespace Laboratorio
 
             try
             {
-                MySqlCommand _comando = new MySqlCommand(String.Format(
+                MySqlCommand mComando = new MySqlCommand(String.Format(
                 "SELECT ncodaseguradora, cempresaseguro FROM TRASEGURADORA"), clasConexion.funConexion());
-                MySqlDataReader _reader = _comando.ExecuteReader();
+                MySqlDataReader mReader = mComando.ExecuteReader();
 
-                while (_reader.Read())
+                while (mReader.Read())
                 {
-                    sCodigo = _reader.GetString(0);
-                    sNombre = _reader.GetString(1);
+                    sCodigo = mReader.GetString(0);
+                    sNombre = mReader.GetString(1);
                     grdConsultarAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
                     sCodigo = "";
                     sNombre = "";
@@ -89,15 +90,15 @@ namespace Laboratorio
                 }
                 else
                 {
-                    MySqlCommand _comando = new MySqlCommand(String.Format(
+                    MySqlCommand mComando = new MySqlCommand(String.Format(
                     "SELECT ncodaseguradora, cempresaseguro FROM TRASEGURADORA WHERE cempresaseguro = '{0}' ", txtNombre.Text), clasConexion.funConexion());
-                    MySqlDataReader _reader = _comando.ExecuteReader();
+                    MySqlDataReader mReader = mComando.ExecuteReader();
 
-                    while (_reader.Read())
+                    while (mReader.Read())
                     {
                         existe = true;
-                        sCodigo = _reader.GetString(0);
-                        sNombre = _reader.GetString(1);
+                        sCodigo = mReader.GetString(0);
+                        sNombre = mReader.GetString(1);
                         grdConsultarAseguradora.Rows.Insert(iContador, sCodigo, sNombre);
                         sCodigo = "";
                         sNombre = "";
@@ -126,9 +127,9 @@ namespace Laboratorio
         {
             try
             {
-                    MySqlCommand comando = new MySqlCommand(string.Format("UPDATE TRASEGURADORA SET cempresaseguro = '{0}' WHERE ncodaseguradora = '{1}'",
+                    MySqlCommand mComando = new MySqlCommand(string.Format("UPDATE TRASEGURADORA SET cempresaseguro = '{0}' WHERE ncodaseguradora = '{1}'",
                     txtActualizarNombre.Text, sCodigoTabla), clasConexion.funConexion());
-                    comando.ExecuteNonQuery();
+                    mComando.ExecuteNonQuery();
                     funActualizar();
                     MessageBox.Show("Se actualizo con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtNombre.Text = "";
@@ -154,9 +155,9 @@ namespace Laboratorio
         {
             try
             {
-                MySqlCommand comando = new MySqlCommand(string.Format("DELETE FROM TRASEGURADORA WHERE ncodaseguradora = '{0}'",
+                MySqlCommand mComando = new MySqlCommand(string.Format("DELETE FROM TRASEGURADORA WHERE ncodaseguradora = '{0}'",
                 sCodigoTabla), clasConexion.funConexion());
-                comando.ExecuteNonQuery();
+                mComando.ExecuteNonQuery();
                 funActualizar();
                 MessageBox.Show("Dato eliminado con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNombre.Text = "";
