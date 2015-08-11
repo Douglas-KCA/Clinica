@@ -50,6 +50,9 @@
             this.sbmIngresarCotizacion = new System.Windows.Forms.ToolStripMenuItem();
             this.sbmModificarCotizacion = new System.Windows.Forms.ToolStripMenuItem();
             this.mReporte = new System.Windows.Forms.ToolStripMenuItem();
+            this.mAnalisis = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarYModificarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.mOtros = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,9 +70,6 @@
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.mAnalisis = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarYModificarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,12 +184,14 @@
             this.sbmIngresarMuestra.Name = "sbmIngresarMuestra";
             this.sbmIngresarMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmIngresarMuestra.Text = "Ingresar";
+            this.sbmIngresarMuestra.Click += new System.EventHandler(this.sbmIngresarMuestra_Click);
             // 
             // sbmConsultaMuestra
             // 
             this.sbmConsultaMuestra.Name = "sbmConsultaMuestra";
             this.sbmConsultaMuestra.Size = new System.Drawing.Size(216, 24);
             this.sbmConsultaMuestra.Text = "Modificar y Consultar";
+            this.sbmConsultaMuestra.Click += new System.EventHandler(this.sbmConsultaMuestra_Click);
             // 
             // mExamenes
             // 
@@ -243,6 +245,28 @@
             this.mReporte.Name = "mReporte";
             this.mReporte.Size = new System.Drawing.Size(72, 23);
             this.mReporte.Text = "Reporte";
+            // 
+            // mAnalisis
+            // 
+            this.mAnalisis.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarToolStripMenuItem2,
+            this.consultarYModificarToolStripMenuItem4});
+            this.mAnalisis.Font = new System.Drawing.Font("Calibri", 12F);
+            this.mAnalisis.Name = "mAnalisis";
+            this.mAnalisis.Size = new System.Drawing.Size(72, 23);
+            this.mAnalisis.Text = "Analisis";
+            // 
+            // ingresarToolStripMenuItem2
+            // 
+            this.ingresarToolStripMenuItem2.Name = "ingresarToolStripMenuItem2";
+            this.ingresarToolStripMenuItem2.Size = new System.Drawing.Size(216, 24);
+            this.ingresarToolStripMenuItem2.Text = "Ingresar";
+            // 
+            // consultarYModificarToolStripMenuItem4
+            // 
+            this.consultarYModificarToolStripMenuItem4.Name = "consultarYModificarToolStripMenuItem4";
+            this.consultarYModificarToolStripMenuItem4.Size = new System.Drawing.Size(216, 24);
+            this.consultarYModificarToolStripMenuItem4.Text = "Consultar y Modificar";
             // 
             // mOtros
             // 
@@ -388,28 +412,6 @@
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // mAnalisis
-            // 
-            this.mAnalisis.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarToolStripMenuItem2,
-            this.consultarYModificarToolStripMenuItem4});
-            this.mAnalisis.Font = new System.Drawing.Font("Calibri", 12F);
-            this.mAnalisis.Name = "mAnalisis";
-            this.mAnalisis.Size = new System.Drawing.Size(72, 23);
-            this.mAnalisis.Text = "Analisis";
-            // 
-            // ingresarToolStripMenuItem2
-            // 
-            this.ingresarToolStripMenuItem2.Name = "ingresarToolStripMenuItem2";
-            this.ingresarToolStripMenuItem2.Size = new System.Drawing.Size(216, 24);
-            this.ingresarToolStripMenuItem2.Text = "Ingresar";
-            // 
-            // consultarYModificarToolStripMenuItem4
-            // 
-            this.consultarYModificarToolStripMenuItem4.Name = "consultarYModificarToolStripMenuItem4";
-            this.consultarYModificarToolStripMenuItem4.Size = new System.Drawing.Size(216, 24);
-            this.consultarYModificarToolStripMenuItem4.Text = "Consultar y Modificar";
             // 
             // frmMenuPrincipal
             // 

@@ -158,5 +158,17 @@ namespace Laboratorio
             frmConsultaMembresia ver = new frmConsultaMembresia();
             ver.Show();
         }
+
+        private void sbmConsultaMuestra_Click(object sender, EventArgs e)
+        {
+            frmConsultaMuestra ver = new frmConsultaMuestra();
+            ver.Show();
+        }
+
+        private void sbmIngresarMuestra_Click(object sender, EventArgs e)
+        {
+            frmMuestra ver = new frmMuestra();
+            ver.Show();
+        }
     }
 }

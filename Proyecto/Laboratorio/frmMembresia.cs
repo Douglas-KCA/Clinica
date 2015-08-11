@@ -13,6 +13,8 @@ namespace Laboratorio
 {
     /*
      * Programador: Kevin Cajbon
+     * Fecha de Astignacion: 01 de agosto
+     * Fecha de Entrega: 02 de Agosto
      *   
     */
     public partial class frmMembresia : Form
@@ -22,7 +24,7 @@ namespace Laboratorio
             InitializeComponent();
         }
 
-        void limpiar() {
+        void funLimpiar() {
             txtPorcentaje.Clear();
             txtTipoMembresia.Clear();
         }
@@ -37,18 +39,23 @@ namespace Laboratorio
                 }
                 else
                 {
-                    MySqlCommand comando = new MySqlCommand(string.Format("Insert into MEMBRESIA(ctipomembresia, cporcentaje)  values ('{0}','{1}')",
+                    MySqlCommand mComando = new MySqlCommand(string.Format("Insert into MEMBRESIA(ctipomembresia, cporcentaje)  values ('{0}','{1}')",
                     txtTipoMembresia.Text, txtPorcentaje.Text), clasConexion.funConexion());
-                    comando.ExecuteNonQuery();
+                    mComando.ExecuteNonQuery();
                     MessageBox.Show("Se inserto con exito", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    limpiar();
+                    funLimpiar();
                 }
             }
             catch
             {
                 MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpiar();
+                funLimpiar();
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            funLimpiar();
         }
     }
 }
