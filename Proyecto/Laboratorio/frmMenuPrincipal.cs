@@ -165,6 +165,16 @@ namespace Laboratorio
         }
 
 <<<<<<< HEAD
+        private void consultaYModificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmSeguro ver = new frmSeguro();
+=======
+<<<<<<< HEAD
         private void sbmConsultaMuestra_Click(object sender, EventArgs e)
         {
             frmConsultaMuestra ver = new frmConsultaMuestra();
@@ -178,6 +188,7 @@ namespace Laboratorio
         private void sbmIngresarEmpleado_Click(object sender, EventArgs e)
         {
             frmEmpleados ver = new frmEmpleados();
+>>>>>>> master
 >>>>>>> master
             ver.Show();
         }
