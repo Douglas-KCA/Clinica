@@ -13,6 +13,13 @@ namespace Laboratorio
 {
     public partial class frmSeguro : Form
     {
+        /*---------------------------------------------------------------------------------------------------
+         * Programador: Diego Taracena
+         * Fecha de Astignacion: 07 de agosto
+         * Fecha de Entrega: 09 de Agosto
+         * -------------------------------------------------------------------------------------------------- 
+        */
+
         string sCadena;
         public frmSeguro()
         {

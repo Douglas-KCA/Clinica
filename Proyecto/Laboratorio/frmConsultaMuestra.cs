@@ -13,6 +13,12 @@ namespace Laboratorio
 {
     public partial class frmConsultaMuestra : Form
     {
+        /*
+         * Programador: Kevin Cajbon
+         * Fecha de Astignacion: 01 de agosto
+         * Fecha de Entrega: 03 de Agosto
+         *   
+        */
         string sActualizarCodigo;
         public frmConsultaMuestra()
         {

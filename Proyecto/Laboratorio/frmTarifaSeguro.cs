@@ -10,12 +10,15 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Laboratorio
-    //*--------------------------------------------------------------------------------------------------------------
-    //*Programador: Diego Taracena
-    //*--------------------------------------------------------------------------------------------------------------
 {
     public partial class frmTarifaSeguro : Form
     {
+        /*---------------------------------------------------------------------------------------------------
+         * Programador: Diego Taracena
+         * Fecha de Astignacion: 03 de agosto
+         * Fecha de Entrega: 05 de Agosto
+         * -------------------------------------------------------------------------------------------------- 
+        */
         public frmTarifaSeguro()
         {
             InitializeComponent();

@@ -95,7 +95,7 @@ namespace Laboratorio
 
         private void sbmCrearEtiqueta_Click(object sender, EventArgs e)
         {
-            frmMuestra muestra = new frmMuestra();
+            frmEtiqueta muestra = new frmEtiqueta();
             muestra.Show();
         }
 
@@ -164,7 +164,7 @@ namespace Laboratorio
             ver.Show();
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         private void consultaYModificacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -173,8 +173,9 @@ namespace Laboratorio
         private void ingresoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             frmSeguro ver = new frmSeguro();
-=======
-<<<<<<< HEAD
+        }
+//=======
+//<<<<<<< HEAD
         private void sbmConsultaMuestra_Click(object sender, EventArgs e)
         {
             frmConsultaMuestra ver = new frmConsultaMuestra();
@@ -184,12 +185,14 @@ namespace Laboratorio
         private void sbmIngresarMuestra_Click(object sender, EventArgs e)
         {
             frmMuestra ver = new frmMuestra();
-=======
+            ver.Show();
+        }
+//=======
         private void sbmIngresarEmpleado_Click(object sender, EventArgs e)
         {
             frmEmpleados ver = new frmEmpleados();
->>>>>>> master
->>>>>>> master
+//>>>>>>> master
+//>>>>>>> master
             ver.Show();
         }
     }

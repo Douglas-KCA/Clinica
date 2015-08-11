@@ -13,8 +13,10 @@ namespace Laboratorio
 {
     /*---------------------------------------------------------------------------------------------------
      * Programador: Diego Taracena
-     * --------------------------------------------------------------------------------------------------
-     * */
+     * Fecha de Astignacion: 01 de agosto
+     * Fecha de Entrega: 02 de Agosto
+     * -------------------------------------------------------------------------------------------------- 
+     */
     public partial class frmConsultarPuesto : Form
     {
         string sCodigoTabla;

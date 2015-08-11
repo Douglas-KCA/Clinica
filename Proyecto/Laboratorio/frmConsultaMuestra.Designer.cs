@@ -227,13 +227,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.grpActualizar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.grdConsultaMuestra);
             this.Controls.Add(this.pnlBotones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmConsultaMuestra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Muestra";
             this.pnlBotones.ResumeLayout(false);
             this.grpActualizar.ResumeLayout(false);
