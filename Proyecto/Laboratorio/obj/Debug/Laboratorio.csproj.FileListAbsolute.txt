@@ -362,5 +362,16 @@ C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Labo
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmSeguro.resources
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTipoExamen.resources
 C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEmpleados.resources
+<<<<<<< HEAD
 C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEmpleados.resources
 C:\Users\Douglas\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTipoExamen.resources
+=======
+<<<<<<< HEAD
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmEmpleados.resources
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmPaciente.resources
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmTipoExamen.resources
+C:\Users\Diego\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaPacientes.resources
+=======
+C:\Users\DylanIsaac\Documents\GitHub\Clinica\Proyecto\Laboratorio\obj\Debug\Laboratorio.frmConsultaEmpleados.resources
+>>>>>>> master
+>>>>>>> master

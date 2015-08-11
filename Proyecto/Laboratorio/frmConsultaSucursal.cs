@@ -18,17 +18,36 @@ namespace Laboratorio
 ---------------------------------------------------------------------------------------------------------------------------------*/
     public partial class frmConsultaSucursal : Form
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 //<<<<<<< HEAD
         //String sNombreEditar;
         //String sUbicacionEditar;
 //=======
+<<<<<<< HEAD
+=======
+=======
+
+        //String sNombreEditar;
+        //String sUbicacionEditar;
+
+>>>>>>> master
+>>>>>>> master
         public frmConsultaSucursal()
         {
             InitializeComponent();
             funActualizar();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 //>>>>>>> master
 
+=======
+>>>>>>> master
         /*---------------------------------------------------------------------------------------------------------------------------------
           Funcion que toma los valores de la fila seleccionada en el grid para mostrarlos en los campos de texto de edicion
         ---------------------------------------------------------------------------------------------------------------------------------*/

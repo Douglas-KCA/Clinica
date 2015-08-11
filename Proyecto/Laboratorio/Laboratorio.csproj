@@ -83,6 +83,12 @@
     <Compile Include="frmConsultaCita.Designer.cs">
       <DependentUpon>frmConsultaCita.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaEmpleados.Designer.cs">
+      <DependentUpon>frmConsultaEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaMembresia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="frmConsultaMuestra.Designer.cs">
       <DependentUpon>frmConsultaMuestra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaPacientes.Designer.cs">
+      <DependentUpon>frmConsultaPacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultarPuesto.cs">
       <SubType>Form</SubType>
@@ -149,6 +161,12 @@
     <Compile Include="frmIngresoCita.Designer.cs">
       <DependentUpon>frmIngresoCita.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaciente.Designer.cs">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,11 +220,17 @@
     <EmbeddedResource Include="frmConsultaCita.resx">
       <DependentUpon>frmConsultaCita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaEmpleados.resx">
+      <DependentUpon>frmConsultaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaMembresia.resx">
       <DependentUpon>frmConsultaMembresia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaMuestra.resx">
       <DependentUpon>frmConsultaMuestra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPacientes.resx">
+      <DependentUpon>frmConsultaPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultarPuesto.resx">
       <DependentUpon>frmConsultarPuesto.cs</DependentUpon>
@@ -234,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresoCita.resx">
       <DependentUpon>frmIngresoCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaciente.resx">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPuesto.resx">
       <DependentUpon>frmPuesto.cs</DependentUpon>

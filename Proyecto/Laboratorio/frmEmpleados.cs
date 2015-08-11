@@ -19,6 +19,7 @@ namespace Laboratorio
          * Fecha de Entrega: 04 de Agosto
         */
         string sSexo;
+        string sCadena;
         public frmEmpleados()
         {
             InitializeComponent();
@@ -62,9 +63,21 @@ namespace Laboratorio
 
         void funInsertarTablaEmpleado(string sCodigoPersona)
         {
-            MessageBox.Show("Codigo Persona: "+sCodigoPersona);
 
+            string sCmbCodPuesto = cmbPuesto.SelectedItem.ToString();
+            string sCodPuesto = funCortador(sCmbCodPuesto);
 
+            try
+            {
+                    MySqlCommand mComando = new MySqlCommand(string.Format("Insert into EMPLEADO (ncodpersona,ncodpuesto) values ('{0}','{1}')",
+                    sCodigoPersona, sCodPuesto), clasConexion.funConexion());
+                    mComando.ExecuteNonQuery();
+
+            }
+            catch
+            {
+                MessageBox.Show("Se produjo un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
             txtApellido.Clear();
@@ -74,6 +87,32 @@ namespace Laboratorio
             txtNit.Clear();
             txtNombre.Clear();
 
+        }
+
+        string funCortador(string sDato)
+        {
+            sCadena = "";
+            try
+            {
+                for (int i = 0; i < sDato.Length; i++)
+                {
+                    if (sDato.Substring(i, 1) != ".")
+                    {
+                        sCadena = sCadena + sDato.Substring(i, 1);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Error al obtener Codigo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            return sCadena;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

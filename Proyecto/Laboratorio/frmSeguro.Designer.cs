@@ -101,6 +101,7 @@
             // 
             // cmbAseguradora
             // 
+            this.cmbAseguradora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAseguradora.FormattingEnabled = true;
             this.cmbAseguradora.Location = new System.Drawing.Point(185, 126);
             this.cmbAseguradora.Name = "cmbAseguradora";
@@ -109,6 +110,7 @@
             // 
             // cmbTarifa
             // 
+            this.cmbTarifa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTarifa.FormattingEnabled = true;
             this.cmbTarifa.Location = new System.Drawing.Point(185, 214);
             this.cmbTarifa.Name = "cmbTarifa";
