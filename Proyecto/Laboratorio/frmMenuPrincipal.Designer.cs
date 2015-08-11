@@ -69,13 +69,10 @@
             this.sbmMembresia = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmIngresar = new System.Windows.Forms.ToolStripMenuItem();
             this.msbmConsultaryModificar = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnSalir = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaYModificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-=======
->>>>>>> master
+            this.btnSalir = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +140,7 @@
             this.sbmModificarEmpleado.Name = "sbmModificarEmpleado";
             this.sbmModificarEmpleado.Size = new System.Drawing.Size(216, 24);
             this.sbmModificarEmpleado.Text = "Modificar y Consultar";
+            this.sbmModificarEmpleado.Click += new System.EventHandler(this.sbmModificarEmpleado_Click);
             // 
             // mCitas
             // 
@@ -407,21 +405,6 @@
             this.msbmConsultaryModificar.Text = "Consultas y Modificar";
             this.msbmConsultaryModificar.Click += new System.EventHandler(this.msbmConsultaryModificar_Click);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(1228, 667);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 50);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-<<<<<<< HEAD
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -445,8 +428,20 @@
             this.consultaYModificacionToolStripMenuItem.Text = "Consultar y Modificar";
             this.consultaYModificacionToolStripMenuItem.Click += new System.EventHandler(this.consultaYModificacionToolStripMenuItem_Click);
             // 
-=======
->>>>>>> master
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(1228, 667);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(110, 50);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
